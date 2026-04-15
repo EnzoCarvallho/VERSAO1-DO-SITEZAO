@@ -1,66 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout</title>
-</head>
-<body>
-    <header class="Cabecalho">
-        <a class="Login" href="">Login</a>
-        <img src="logo.png" alt="">
-    </header>
-    <nav class="Menu">
-        <a class="Primeiro" href="">Inicio</a>
-        <a class="Segundo" href="">Produtos</a>
-        <a class="Terceiro" href="">Sobre</a>
-        <a class="Quarto" href="">Contato</a>
-    </nav>
-    <main class="Principal">
-        <section>
-  <h1>Bem-vindo à PlayArte</h1>
-  <p>Um site feito para fãs de artistas brasileiros. Descubra talentos, explore conteúdos e valorize a arte nacional.</p>
-</section>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayArte</title>
 
-    </main>
-    <aside class="Relacionado"></aside>
-    <footer class="Rodape"></footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <header class="Cabecalho">
-        <a class="Login" href="">Login</a>
-        <img src="logo.png" alt="">
-    </header>
-    <nav class="Menu">
-        <a class="Primeiro" href="">Inicio</a>
-        <a class="Segundo" href="">Produtos</a>
-        <a class="Terceiro" href="">Sobre</a>
-        <a class="Quarto" href="">Contato</a>
-    </nav>
-    <main class="Principal">
-        <section>
-  <h1>Bem-vindo à PlayArte</h1>
-  <p>Um site feito para fãs de artistas brasileiros. Descubra talentos, explore conteúdos e valorize a arte nacional.</p>
-</section>
 
+<body class="container-fluid p-1">
+
+  <!-- HEADER -->
+  <header class="bg-secondary d-flex align-items-center p-2 mb-1" style="height:100px;">
+    <img src="logo.png" alt="" style="height:100%;">
+    <a href="#" class="ms-auto text-dark text-decoration-none fs-5 me-2">Login</a>
+  </header>
+
+  <!-- NAV -->
+  <nav class="bg-secondary d-flex justify-content-center align-items-center mb-1" style="height:100px;">
+    <a href="#" class="mx-5 fs-4 text-dark text-decoration-none">Início</a>
+    <a href="#" class="mx-5 fs-4 text-dark text-decoration-none">Produtos</a>
+    <a href="#" class="mx-5 fs-4 text-dark text-decoration-none">Sobre</a>
+    <a href="#" class="mx-5 fs-4 text-dark text-decoration-none">Contato</a>
+  </nav>
+
+  <!-- MAIN + ASIDE -->
+  <div class="row g-1">
+
+    <!-- MAIN -->
+    <main class="col-md-9 bg-secondary p-3" style="min-height: calc(100vh - 320px);">
+      <h1>Bem-vindo à PlayArte</h1>
+      <p>
+        Um site feito para fãs de artistas brasileiros. 
+        Descubra talentos, explore conteúdos e valorize a arte nacional.
+      </p>
     </main>
-    <aside class="Relacionado"></aside>
-    <footer class="Rodape"></footer>
+
+    <!-- ASIDE -->
+    <aside class="col-md-3 bg-secondary p-3">
+      <!-- lateral -->
+    </aside>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-secondary d-flex align-items-center justify-content-center mt-1" style="height:100px;">
+    Rodapé
+  </footer>
+
 </body>
 </html>
